@@ -9,7 +9,7 @@ The columns are numbered, the border colour shows you whose turn it is, each pla
 There is animation. There are simple sound effects. When the game is won, the winning line flashes on screen.
 It is a beautiful implementation of Connect 4.
 
-It is astonishing that this fits into a single line of BASIC code occupying single screen. My discovery of this feat had motivated me to make [my own one-liner game](https://github.com/patters-syno/line). Although I did use some of the coding tricks that this and [other one-liners](http://reptonix.awardspace.co.uk/sinclair/oneliners/) have employed, I had always wanted to fully unpick this listing to discover how it functioned.
+It is astonishing that it fits into a single line of BASIC occupying a single screen. My discovery of this feat had motivated me to make [my own one-liner game](https://github.com/patters-syno/line). Although I did use some of the coding tricks that this and [other one-liners](http://reptonix.awardspace.co.uk/sinclair/oneliners/) have employed, I had always wanted to fully unpick this listing to discover how it functioned.
 
 ## Source files
 
