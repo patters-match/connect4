@@ -1,3 +1,10 @@
+# Connect 4 PvP : a one-line game for ZX Spectrum
+#
+# by Digital Prawn and Einar Saukas, with additional suggestions by Dr BEEP
+#
+# http://reptonix.awardspace.co.uk/sinclair/oneliners/connect4-pvp.htm
+#
+#
 let n=23620: \
 let p=2: \
 poke n+73,8: \
