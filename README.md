@@ -8,7 +8,9 @@ This is a shining example of functional minimalism in game design, and utter exc
 The columns are numbered, the border colour shows you whose turn it is, each player presses a number to play their turn.
 There is animation. There are simple sound effects. When the game is won, the winning line flashes on screen.
 
-It is astonishing that this fits into a single screen of BASIC code. The existance of this motivated me to make [my own one-liner game](https://github.com/patters-syno/line). Although I used some of the coding tricks that this and [other one-liners](http://reptonix.awardspace.co.uk/sinclair/oneliners/) have employed, I had always wanted to fully unpick this listing to discover how it functioned - which is what you see here:
+It is astonishing that this fits into a single screen of BASIC code. The existance of this motivated me to make [my own one-liner game](https://github.com/patters-syno/line). Although I used some of the coding tricks that this and [other one-liners](http://reptonix.awardspace.co.uk/sinclair/oneliners/) have employed, I had always wanted to fully unpick this listing to discover how it functioned.
+
+## Source files
 
 - **[c4.bas](https://github.com/patters-syno/connect4/blob/main/c4.bas)** is the original listing unrolled into a ```*.bas``` file with indentations for readibility, which can be built back into the original tap file by [zmakebas](https://github.com/ohnosec/zmakebas).
 When lines are wrapped like this, comments cannot be inserted unfortunately - but it does give a good idea of the flow of the program (minus the pokes to the program counter).
