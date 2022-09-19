@@ -31,7 +31,7 @@ It too can be built by [zmakebas](https://github.com/ohnosec/zmakebas) into a fu
 
 ## How It Works - The Grid Array
 
-The flourish of this program is to store the game layout as a one dimensional array - an elegant solution. The array index for each position is shown below:
+The main flourish of this program is to store the game layout as a one dimensional array - an elegant solution. The array index for each position is shown below:
 
 |    |    |    |    |    |    |    |
 |----|----|----|----|----|----|----|
