@@ -19,7 +19,7 @@ When lines are wrapped like this, comments cannot be inserted unfortunately - bu
   zmakebas -n Connect4 -o c4.tap -l -i 10 -s 1 c4.bas
   ```
 
-- **[c4_annotated.bas](https://github.com/patters-syno/connect4/blob/main/c4_annotated.bas)** is this same listing chopped into multiple lines, using labels instead of pokes to jump around, with extensive comments to describe how it all works.
+- **[c4_annotated.bas](https://github.com/patters-syno/connect4/blob/main/c4_annotated.bas)** is this same listing chopped into multiple lines, using labels instead of pokes to jump around, with explanatory comments.
 It too can be built by [zmakebas](https://github.com/ohnosec/zmakebas) into a functionally identical Spectrum listing, though no longer a one-liner.
 
   ```bash
