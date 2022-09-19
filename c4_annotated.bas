@@ -95,7 +95,7 @@
         for j=1 to 4
 # start line check
             let l=0
-# set the array index delta d for the four cases we're checking (1, 7, 8, or 9)
+# set the array index delta d for the four cases we're checking (1, 7, 8, 9)
             let d=j+5*(j>1)
 # for each line there are two directions to check
             for e=0 to 1
