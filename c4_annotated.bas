@@ -1,3 +1,11 @@
+# Connect 4 PvP : a one-line game for ZX Spectrum
+#
+# by Digital Prawn and Einar Saukas, with additional suggestions by Dr BEEP
+#
+# http://reptonix.awardspace.co.uk/sinclair/oneliners/connect4-pvp.htm
+#
+# comments by patters
+#
 #       let n=23620
 # red player starts
         let p=2
@@ -7,7 +15,8 @@
         cls
 # real game grid array 7X * 6Y = 42 positions
 #
-# this program uses a one dimensional array:
+# this program uses a one dimensional array
+        dim t(65)
 #  t(1)           = stores position of last token to be played
 #  t(2) to t(8)   = stores positions of tokens in the last line that was checked for length, so...
 #  t(5)          != 0 means that a game has been won because the line is length >=4
@@ -22,10 +31,10 @@
 #  t(58) to t(65) = spare row to prevent a "3 Subscript Wrong" error when position below a token is checked in @tokenfall
 #
 # very neat: the unused value per row - t(17), t(25), t(33), etc. - prevents false detections of
-# diagonals wrapping from one side of the grid to the other
+# diagonals wrapping from one side of the grid to the other since the check will always hit an empty index
 #
 # tokens are stored as player ink colour (2 or 6)
-        dim t(65)
+#
 @drawgrid:
         for x=1 to 6
             for y=2 to 8
@@ -36,6 +45,7 @@
             next y
 @newturn:
 # increment move counter (starts at 7, is 49 when all 42 tokens have been played)
+# BASIC will continue to increment x even though its original for loop has finished
         next x
 # if there are moves left (move counter != 49) and no one has yet won
 #       if 49=x=t(5) then \
@@ -90,8 +100,8 @@
 #  :-----+-----+-----+-----+-----+-----+-----:
 #
 # for horizontal lines, tokens are stored 1 index position apart in the array
-# for rising diagonals, tokens are stored 7 index positions apart in the array
 # for vertical lines, tokens are stored 8 index positions apart in the array
+# for rising diagonals, tokens are stored 7 index positions apart in the array
 # for falling diagonals, tokens are stored 9 index positions apart in the array
 #
 # so four types of line to check
