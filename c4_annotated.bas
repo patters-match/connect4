@@ -30,8 +30,8 @@
 #
 #  t(58) to t(65) = spare row to prevent a "3 Subscript Wrong" error when position below a token is checked in @tokenfall
 #
-# very neat: the unused value per row - t(17), t(25), t(33), etc. - prevents false detections of
-# diagonals wrapping from one side of the grid to the other since the check will always hit an empty index
+# very neat: the unused value per row - t(17), t(25), t(33), etc. - prevents line detections
+# wrapping from one side of the grid to the other since the check will always hit an empty index
 #
 # tokens are stored as player ink colour (2 or 6)
 #
