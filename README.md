@@ -17,7 +17,7 @@ It too can be built by [zmakebas](https://github.com/ohnosec/zmakebas) into a fu
 
 ## The Grid Array
 
-The main conceit of this program is to store the game layout as a one dimensional array. The array index for each position is shown below:
+The main conceit of this program is to store the game layout as a one dimensional array - beautifully elegant. The array index for each position is shown below:
 
 |    |    |    |    |    |    |    |
 |----|----|----|----|----|----|----|
