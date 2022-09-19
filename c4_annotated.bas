@@ -85,26 +85,28 @@
 #                                                          check for four or more tokens in a row...
 #                                                          consider the array indices for all game positions:
 #
-#                                                           :-----+-----+-----+-----+-----+-----+-----:
-#                                                           | 10  | 11  | 12  | 13  | 14  | 15  | 16  |
-#                                                           :-----+-----+-----+-----+-----+-----+-----:
-#                                                           | 18  | 19  | 20  | 21  | 22  | 23  | 24  |
-#                                                           :-----+-----+-----+-----+-----+-----+-----:
-#                                                           | 26  | 27  | 28  | 29  | 30  | 31  | 32  |
-#                                                           :-----+-----+-----+-----+-----+-----+-----:
-#                                                           | 34  | 35  | 36  | 37  | 38  | 39  | 40  |
-#                                                           :-----+-----+-----+-----+-----+-----+-----:
-#                                                           | 42  | 43  | 44  | 45  | 46  | 47  | 48  |
-#                                                           :-----+-----+-----+-----+-----+-----+-----:
-#                                                           | 50  | 51  | 52  | 53  | 54  | 55  | 56  |
-#                                                           :-----+-----+-----+-----+-----+-----+-----:
+#                                                          +-----+-----+-----+-----+-----+-----+-----+   .......
+#                                                          | 10  | 11  | 12  | 13  | 14  | 15  | 16  |   : 17  :
+#                                                          +-----+-----+-----+-----+-----+-----+-----+   :.....:
+#                                                          | 18  | 19  | 20  | 21  | 22  | 23  | 24  |   : 25  :
+#                                                          +-----+-----+-----+-----+-----+-----+-----+   :.....:
+#                                                          | 26  | 27  | 28  | 29  | 30  | 31  | 32  |   : 33  :
+#                                                          +-----+-----+-----+-----+-----+-----+-----+   :.....:
+#                                                          | 34  | 35  | 36  | 37  | 38  | 39  | 40  |   : 41  :
+#                                                          +-----+-----+-----+-----+-----+-----+-----+   :.....:
+#                                                          | 42  | 43  | 44  | 45  | 46  | 47  | 48  |   : 49  :
+#                                                          +-----+-----+-----+-----+-----+-----+-----+   :.....:
+#                                                          | 50  | 51  | 52  | 53  | 54  | 55  | 56  |   : 57  :
+#                                                          +-----+-----+-----+-----+-----+-----+-----+   :.....:
 #
 #                                                          for horizontal lines, tokens are stored 1 index position apart in the array
 #                                                          for vertical lines, tokens are stored 8 index positions apart in the array
 #                                                          for rising diagonals, tokens are stored 7 index positions apart in the array
 #                                                          for falling diagonals, tokens are stored 9 index positions apart in the array
 #
-#                                                          so four types of line to check
+#                                                          unassigned indices 17,25,33,41,49,57 will always be empty so line checks cannot wrap to the other side of the grid
+#
+#                                                          four types of line to check
         for j=1 to 4
 #                                                          start line check
             let l=0
