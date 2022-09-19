@@ -68,21 +68,17 @@
         if t(k+8)=0 and (a<18) then goto @tokenfall
 # record the player's token ink colour in the grid array
         let t(k)=p
-# check for four tokens in a row - consider table below:
+# check for four tokens in a row - consider the table below:
 #
-#  +─────+─────+─────+─────+─────+─────+─────+
+#  .-----.-----.-----.-----.-----.-----.-----.
 #  | 10  | 11  | 12  | 13  | 14  | 15  | 16  |
-#  +─────+─────+─────+─────+─────+─────+─────+
+#  :-----+-----+-----+-----+-----+-----+-----:
 #  | 18  | 19  | 20  | 21  | 22  | 23  | 24  |
-#  +─────+─────+─────+─────+─────+─────+─────+
 #  | 26  | 27  | 28  | 29  | 30  | 31  | 32  |
-#  +─────+─────+─────+─────+─────+─────+─────+
 #  | 34  | 35  | 36  | 37  | 38  | 39  | 40  |
-#  +─────+─────+─────+─────+─────+─────+─────+
 #  | 42  | 43  | 44  | 45  | 46  | 47  | 48  |
-#  +─────+─────+─────+─────+─────+─────+─────+
 #  | 50  | 51  | 52  | 53  | 54  | 55  | 56  |
-#  +─────+─────+─────+─────+─────+─────+─────+
+#  '-----'-----'-----'-----'-----'-----'-----'
 #
 # for horizontal lines, tokens are stored 1 index position apart in the array
 # for rising diagonals, tokens are stored 7 index positions apart in the array
