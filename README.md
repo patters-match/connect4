@@ -14,10 +14,21 @@ It is astonishing that this fits into a single line of BASIC code occupying sing
 
 - **[c4.bas](https://github.com/patters-syno/connect4/blob/main/c4.bas)** is the original listing unrolled into a ```.bas``` file with indentations for readibility, which can be built back into the original ```.tap``` file by [zmakebas](https://github.com/ohnosec/zmakebas).
 When lines are wrapped like this, comments cannot be inserted unfortunately - but it does give a good idea of the program flow (minus the pokes to the program counter).
-- **[c4_annotated.bas](https://github.com/patters-syno/connect4/blob/main/c4_annotated.bas)** is this same listing chopped into multiple lines, using labels instead of pokes to jump around, with extensive comments to reveal how it all works.
+
+  ```bash
+  zmakebas -n Connect4 -o c4.tap -l -i 10 -s 1 c4.bas
+  ```
+
+- **[c4_annotated.bas](https://github.com/patters-syno/connect4/blob/main/c4_annotated.bas)** is this same listing chopped into multiple lines, using labels instead of pokes to jump around, with extensive comments to describe how it all works.
 It too can be built by [zmakebas](https://github.com/ohnosec/zmakebas) into a functionally identical Spectrum listing, though no longer a one-liner.
 
-## The Grid Array
+  ```bash
+  zmakebas -n Connect4 -o c4_multiline.tap -l -i 10 -a 10 c4_annotated.bas
+  ```
+
+<br>
+
+## How It Works - The Grid Array
 
 The main conceit of this program is to store the game layout as a one dimensional array - beautifully elegant. The array index for each position is shown below:
 
