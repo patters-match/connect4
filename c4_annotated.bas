@@ -68,7 +68,9 @@
         if t(k+8)=0 and (a<18) then goto @tokenfall
 # record the player's token ink colour in the grid array
         let t(k)=p
-# check for four tokens in a row - consider the table below:
+#
+# check for four or more tokens in a row...
+# consider the array indices for all game positions:
 #
 #  :-----+-----+-----+-----+-----+-----+-----:
 #  | 10  | 11  | 12  | 13  | 14  | 15  | 16  |
