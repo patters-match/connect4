@@ -1,4 +1,4 @@
-# Connect 4 PvP
+# Connect 4 PvP - a commented source
 
 An incredible one-liner BASIC program for ZX Spectrum, by [Digital Prawn and Einar Saukas, with additional suggestions by Dr BEEP](http://reptonix.awardspace.co.uk/sinclair/oneliners/connect4-pvp.htm).
 
