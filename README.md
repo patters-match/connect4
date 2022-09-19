@@ -16,7 +16,7 @@ It is astonishing that this fits into a single line of BASIC code occupying sing
 When lines are wrapped like this, comments cannot be inserted unfortunately - but it does give a good idea of the program flow (minus the pokes to the program counter).
 
   ```bash
-  zmakebas -n Connect4 -o c4.tap -l -i 10 -s 1 c4.bas
+  zmakebas -n Connect4 -o c4_oneline.tap -l -i 10 -s 1 c4.bas
   ```
 
 - **[c4_annotated.bas](https://github.com/patters-syno/connect4/blob/main/c4_annotated.bas)** is this same listing chopped into multiple lines, using labels instead of pokes to jump around, with explanatory comments.
