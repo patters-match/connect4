@@ -107,6 +107,7 @@
 # store checked token(s) in the unused 'first row' of the grid array
                 let t(l)=m
 # m=m+d or m=m-d depending on the direction e
+# fewer characters than using 'for e=-1 to 1 step 2'
                 let m=m-d+2*d*e
 # if the next token in the line being checked is the same colour then check the next
 #               poke (t(m)=p)*n,29
