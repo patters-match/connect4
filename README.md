@@ -15,3 +15,29 @@ Though I used some of the coding tricks that this and [other one-liners](http://
 When lines are wrapped like this, comments cannot be inserted unfortunately - but it does give a good idea of the flow of the program (minus the pokes to the program counter).
 - **c4annotated.bas** is this same listing converted chopped into multiple lines, using labels instead of pokes to jump around, with extensive comments to reveal how it all works.
 It too can be built by [zmakebas](https://github.com/ohnosec/zmakebas) into a functionally identical listing, though no longer a one-liner.
+
+## The Grid Array
+
+The main conceit of this program is to store the game layout as a one dimensional array. The array index for each position is shown below:
+
+|    |    |    |    |    |    |    |
+|----|----|----|----|----|----|----|
+| 10 | 11 | 12 | 13 | 14 | 15 | 16 |
+| 18 | 19 | 20 | 21 | 22 | 23 | 24 |
+| 26 | 27 | 28 | 29 | 30 | 31 | 32 |
+| 34 | 35 | 36 | 37 | 38 | 39 | 40 |
+| 42 | 43 | 44 | 45 | 46 | 47 | 48 |
+| 50 | 51 | 52 | 53 | 54 | 55 | 56 |
+
+When checking for lines of four, this only needs to be done right after each token is played, from that token position.
+When seen like this, it becomes very clear that:
+
+- a horizontal line can be checked by comparing adjacent array indices
+- a vertical line can be checked by comparing array indices with an interval of 8
+- a rising diagonal has interval 7
+- a falling diagonal has interval 9
+
+There are four types of line to check for, each with two directions to iterate. Get to the end of one direction, turn around and iterate the other way.
+
+Notice also that there is an unused index for each row (17, 25, 33 and so on) - this prevents the algorithm from wrapping from one side of the grid to the other, since it will always encounter an empty slot there, ending the check.
+
