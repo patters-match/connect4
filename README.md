@@ -39,4 +39,4 @@ When seen like this, it becomes very clear that:
 
 Notice also that there is an unused index for each row (17, 25, 33 and so on) - this prevents the algorithm from wrapping from one side of the grid to the other, since it will always encounter an empty slot there, ending the check.
 
-There are four types of line to check for, each with two directions to iterate. Get to the end of one direction, turn around and iterate the other way.
+There are four types of line to check for, each with two directions to iterate.
