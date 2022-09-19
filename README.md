@@ -7,6 +7,7 @@ An incredible one-liner BASIC program for the ZX Spectrum, by [Digital Prawn and
 This is a shining example of functional minimalism in game design, and utter excellence of execution.
 The columns are numbered, the border colour shows you whose turn it is, each player presses a number to play their turn.
 There is animation. There are simple sound effects. When the game is won, the winning line flashes on screen.
+It is a beautiful implementation of Connect 4.
 
 It is astonishing that this fits into a single line of BASIC code occupying single screen. My discovery of this feat had motivated me to make [my own one-liner game](https://github.com/patters-syno/line). Although I did use some of the coding tricks that this and [other one-liners](http://reptonix.awardspace.co.uk/sinclair/oneliners/) have employed, I had always wanted to fully unpick this listing to discover how it functioned.
 
@@ -30,7 +31,7 @@ It too can be built by [zmakebas](https://github.com/ohnosec/zmakebas) into a fu
 
 ## How It Works - The Grid Array
 
-The main conceit of this program is to store the game layout as a one dimensional array - beautifully elegant. The array index for each position is shown below:
+The main conceit of this program is to store the game layout as a one dimensional array - an elegant solution. The array index for each position is shown below:
 
 |    |    |    |    |    |    |    |
 |----|----|----|----|----|----|----|
