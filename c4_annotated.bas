@@ -19,6 +19,8 @@
 #  t(42) to t(48) = fifth row
 #  t(50) to t(56) = bottom row
 #
+#  t(58) to t(65) = spare row to prevent a "3 Subscript Wrong" error when position below a token is checked in @tokenfall
+#
 # very neat: the unused value per row - t(17), t(25), t(33), etc. - prevents false detections of
 # diagonals wrapping from one side of the grid to the other
 #
@@ -64,6 +66,7 @@
         let a=a+3
         let k=a*8/3+b
 # if space below token is empty and token is not yet at the bottom row
+# to stop t(k+8) failing for the bottom row, the grid array simply has an additional spare row                                                  
 #       poke (t(k+8)=0)*(a<18)*n,18
         if t(k+8)=0 and (a<18) then goto @tokenfall
 # record the player's token ink colour in the grid array
