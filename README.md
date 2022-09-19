@@ -12,7 +12,7 @@ It is astonishing that this fits into a single line of BASIC code occupying sing
 
 ## Source files
 
-- **[c4.bas](https://github.com/patters-syno/connect4/blob/main/c4.bas)** is the original listing unrolled into a ```*.bas``` file with indentations for readibility, which can be built back into the original tap file by [zmakebas](https://github.com/ohnosec/zmakebas).
+- **[c4.bas](https://github.com/patters-syno/connect4/blob/main/c4.bas)** is the original listing unrolled into a ```.bas``` file with indentations for readibility, which can be built back into the original ```.tap``` file by [zmakebas](https://github.com/ohnosec/zmakebas).
 When lines are wrapped like this, comments cannot be inserted unfortunately - but it does give a good idea of the flow of the program (minus the pokes to the program counter).
 - **[c4_annotated.bas](https://github.com/patters-syno/connect4/blob/main/c4_annotated.bas)** is this same listing chopped into multiple lines, using labels instead of pokes to jump around, with extensive comments to reveal how it all works.
 It too can be built by [zmakebas](https://github.com/ohnosec/zmakebas) into a functionally identical listing, though no longer a one-liner.
