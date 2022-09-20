@@ -14,7 +14,7 @@ It is astonishing that it fits into a single line of BASIC occupying a single sc
 ## Source files
 
 - **[c4.bas](https://github.com/patters-syno/connect4/blob/main/c4.bas)** is the original listing unrolled into a ```.bas``` file with indentations for readibility, which can be built back into the original ```.tap``` file by [zmakebas](https://github.com/ohnosec/zmakebas).
-When lines are wrapped like this, comments cannot be inserted unfortunately - but it does give a good idea of the program flow (minus the pokes to the program counter).
+When a line is wrapped like this, comments cannot be inserted unfortunately - but it does give a good idea of the program flow (minus the pokes to the program counter).
 
   ```bash
   zmakebas -n Connect4 -o c4_oneline.tap -l -i 10 -s 1 c4.bas
