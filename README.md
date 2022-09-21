@@ -13,7 +13,7 @@ It is astonishing that it fits into a single line of BASIC occupying a single sc
 
 ## Source files
 
-- **[c4.bas](https://github.com/patters-syno/connect4/blob/main/c4.bas)** is the original listing unrolled into a ```.bas``` file with indentations for readibility, which can be built back into the original ```.tap``` file by [zmakebas](https://github.com/ohnosec/zmakebas).
+- **[c4.bas](https://github.com/patters-syno/connect4/blob/main/c4.bas)** is the original listing unrolled into a text file with indentations for readibility, which can be built back into the original ```.tap``` file by [zmakebas](https://github.com/ohnosec/zmakebas).
 When a line is wrapped like this, comments cannot be inserted unfortunately - but it does give a good idea of the program flow (minus the pokes to the program counter).
 
   ```bash
